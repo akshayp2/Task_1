@@ -1,6 +1,6 @@
 import React from "react";
 
-function Services() {
+function ServicesComp() {
   return (
     <div className="min-h-screen bg-black text-white  sm:px-12 sm:py-8">
       <h1 className="sm:text-4xl font-bold text-center mb-8">Our Services</h1>
@@ -45,4 +45,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default ServicesComp;
