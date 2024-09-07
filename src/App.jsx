@@ -8,15 +8,14 @@ function App() {
 
   const handleExploreClick = () => {
     setShowWelcome(false);
-    navigate("/home");
+    navigate("/home"); // Ensure this matches the route for your home page
   };
 
   return (
     <div className="min-h-screen mx-auto bg-black text-white">
-      <Navbar />
       {showWelcome ? (
         <div className="mx-auto welcome-message animate-fadeIn flex flex-col items-center justify-center p-32">
-          <h1 className=" text-2xl text-center md:text-6xl mb-4 bg-gradient-to-l from-blue-500  to-green-600  bg-clip-text text-transparent">
+          <h1 className="text-2xl text-center md:text-6xl mb-4 bg-gradient-to-l from-blue-500 to-green-600 bg-clip-text text-transparent">
             Welcome to Our Website!
           </h1>
           <p className="text-lg md:px-10 text-center">
@@ -32,7 +31,10 @@ function App() {
           </button>
         </div>
       ) : (
-        <Outlet />
+        <div>
+          <Navbar />
+          <Outlet />
+        </div>
       )}
     </div>
   );

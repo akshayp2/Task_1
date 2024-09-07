@@ -14,8 +14,8 @@ function Navbar() {
       title: "Services",
       source: "/services",
       sublinks: [
-        { title: "Web Development", source: "/services" },
-        { title: "App Development", source: "/services" },
+        { title: "Web Development", source: "/services/web-development" },
+        { title: "App Development", source: "/services/app-development" },
       ],
     },
   ];
