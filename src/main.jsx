@@ -5,8 +5,8 @@ import App from "./App.jsx";
 import Home from "./component/Home.jsx";
 import About from "./component/About.jsx";
 import Contact from "./component/Contact.jsx";
-import Services from "./component/Services.jsx";
 import "./index.css";
+import Services from "./component/Services.jsx";
 
 const router = createBrowserRouter([
   {
