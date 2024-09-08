@@ -4,11 +4,11 @@ import Navbar from "./component/Navbar";
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleExploreClick = () => {
     setShowWelcome(false);
-    navigate("/home"); // Ensure this matches the route for your home page
+    navigate("/home");
   };
 
   return (

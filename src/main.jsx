@@ -7,8 +7,7 @@ import About from "./component/About.jsx";
 import Contact from "./component/Contact.jsx";
 import "./index.css";
 import ServicesComp from "./component/ServicesComp.jsx";
-console.log("component service loaded", <Services />);
-
+console.log("component service loaded", <ServicesComp />);
 const router = createBrowserRouter([
   {
     path: "/",
